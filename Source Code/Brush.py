@@ -2,16 +2,21 @@ import turtle
 from turtle import Turtle, Screen
 import random
 
+
+colors = ['snow', 'red', 'blue', 'green', 'purple', 'yellow', 'orange', 'black', 'grey', 'cyan', 'pink']
+brushes = ['classic', 'arrow', 'turtle', 'triangle', 'circle', 'square']
+
+
 screen = Screen()
 screen.title("Brush")
-screen.bgcolor("snow")
+screen.bgcolor('snow')
 screen.setup(width=800, height=800)
 
-brush = Turtle("arrow")
+brush = Turtle()
 brush.speed(-1)
 brush.width(3)
 
-colors = ['red', 'blue', 'green', 'purple', 'yellow', 'orange', 'black']
+
 
 
 def stamp():
@@ -59,6 +64,14 @@ def clickleftscreen(x, y):
     brush.pendown()
 
 
+def presst():
+    screen.bgcolor(random.choice(colors))
+
+
+def pressk():
+    brush.shape(random.choice(brushes))
+
+
 def main():
     turtle.listen()
 
@@ -67,6 +80,8 @@ def main():
     turtle.onscreenclick(clickright, 3)
     turtle.onscreenclick(middleclick, 2)
 
+    turtle.onkey(pressk, 'k')
+    turtle.onkey(presst, 't')
     turtle.onkey(up, 'Up')
     turtle.onkey(down, 'Down')
     turtle.onkey(left, 'Left')
