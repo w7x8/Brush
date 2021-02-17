@@ -11,3 +11,4 @@ How to use:
 7. Press 'K' to change the shape of the brush.
 
 ## Screenshot:
+  ![Screenshot](Capture.PNG)
