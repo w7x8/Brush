@@ -9,3 +9,5 @@ How to use:
 5. Press 'S' to stamp.
 6. Press 'T' to change background color.
 7. Press 'K' to change the shape of the brush.
+
+## Screenshot:
