@@ -7,3 +7,5 @@ How to use:
 3. 'Middle Click' to change colors.
 4. 'Right Click' to clear.
 5. Press 'S' to stamp.
+6. Press 'T' to change background color.
+7. Press 'K' to change the shape of the brush.
